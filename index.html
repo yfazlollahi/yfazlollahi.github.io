@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yeganeh's Personal Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at center, #f0d6d6 0%, #c89c9c 100%);
+      color: #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #e7c1c1;
+      padding: 1rem;
+      border-bottom: 2px solid #c78b8b;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      background: #f3d9d9;
+      padding: 0.6rem 2rem;
+      border-radius: 20px;
+      font-weight: 600;
+      transition: background 0.3s;
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background: #d6a8a8;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .top-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      width: 100%;
+      align-items: center;
+    }
+
+    .welcome-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: justify;
+    }
+
+    .welcome-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .icon-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .icon-row a {
+      color: #000;
+      transition: transform 0.3s;
+    }
+
+    .icon-row a:hover {
+      transform: scale(1.2);
+      color: #8a4c4c;
+    }
+
+    .profile-img {
+      width: 260px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      width: 100%;
+    }
+
+    .intro-box,
+    .extra-section {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 2rem;
+      border-radius: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .extra-section ul {
+      padding-left: 1.2rem;
+    }
+
+    .extra-section h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+
+  <div class="container">
+    <div class="top-grid">
+      <div class="welcome-box">
+        <div class="welcome-text">Hi, I’m Yeganeh Fazlollahi</div>
+        <p>B.Sc. Student, Computer Engineering<br>
+          Amirkabir University of Technology, Tehran</p>
+        <div class="icon-row">
+          <a href="mailto:yeganehfazlollahie@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/yfazlollahi" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/yourlinkedin" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <img src="profile.jpg" alt="Yeganeh" class="profile-img" />
+    </div>
+
+    <div class="bottom-grid">
+      <div class="intro-box">
+       <p>Welcome to my personal page! I'm <strong>Yeganeh Fazlollahi</strong>, a computer engineering student at Amirkabir University of Technology. Here you'll find my academic and personal projects, along with insights into my technical journey and interests. Whether you're a fellow student, a collaborator, or just curious—I'm glad you're here!</p>
+      </div>
+
+      <div class="extra-section">
+        <h3>What you'll find here:</h3>
+        <ul>
+          <li>✨ Highlights from academic and independent coding projects</li>
+          <li>📄 A detailed resume featuring technical and teamwork experiences</li>
+          <li>🎯 An overview of personal interests, goals, and aspirations</li>
+        </ul>
+        <p>Feel free to connect or drop a message. Thanks for visiting!</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
