@@ -11,21 +11,41 @@
       font-family: 'Inter', sans-serif;
       background-color: #faeee7;
       color: #222;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       min-height: 100vh;
       padding: 2rem;
     }
+	
+	h1.page-title {
+	  font-family: 'Playfair Display', serif;
+	  text-align: center;
+	  font-size: 2.8rem;
+	  color: #333;
+	  margin-top: 2rem;
+	  margin-bottom: 2rem;
+	}
 
     .about-container {
       background-color: #ffffffee;
-      padding: 3rem 2rem;
+      padding: 2.5rem 2rem;
       border-radius: 20px;
       max-width: 700px;
       width: 100%;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
+	
+	.about-container h2 {
+	  color: #222;
+	  font-size: 1.3rem;
+	  margin-top: 2rem;
+	}
+
+	.about-container p {
+	  margin-top: 0.7rem;
+	  line-height: 1.8;
+	  font-size: 1rem;
+	  color: #333;
+	  text-align: justify;
+	}
 
     h1 {
       font-family: 'Playfair Display', serif;
@@ -73,7 +93,7 @@
   </style>
 </head>
 <body>
-  <h1>About Me</h1>
+  <h1 class="page-title">About Me</h1>
   
   <div class="about-container">
     <h2>Interests</h2>
