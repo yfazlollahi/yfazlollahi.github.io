@@ -4,55 +4,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yeganeh's Personal Page</title>
+  <title>Yeganeh Fazlollahi</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at center,  #f8e6e6 0%, #e4bebe 100%);
-      color: #000;
+      background-color: #faeee7;
+      color: #222;
+      padding: 2rem;
     }
 
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background-color: #faeee7;
+      background-color: #fcecec;
       padding: 1rem;
-      border-bottom: 1px solid #d5aaaa;
       border-radius: 0 0 30px 30px;
+	  font-family: 'Playfair Display', serif;
     }
 
     nav a {
       text-decoration: none;
       color: #000;
-      background: #fbeeee;
-      padding: 0.6rem 2rem;
+      background: #fff;
+      padding: 0.5rem 1.5rem;
       border-radius: 20px;
       font-weight: 600;
 	  font-family: 'Playfair Display', serif;
       transition: background 0.3s;
-      display: inline-block;
-      width: 150px;
-      text-align: center;
     }
 
     nav a:hover {
-      background: #eac1c1;
+      background: #f0dada;
     }
 
-    .container {
+    .main-container {
+      display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+      align-items: center;
+	  margin-top: 3rem;
+      gap: 2rem;
+    }
+
+ .left-section {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 4rem 2rem;
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
     }
 
+    .profile-img {
+      width: 200px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .icon-row {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1.2rem;
+      font-size: 1.5rem;
+    }
+
+    .icon-row a {
+      color: #222;
+      transition: transform 0.3s;
+    }
+
+    .icon-row a:hover {
+      transform: scale(1.2);
+      color: #c16b6b;
+    }
+
+    .right-section {
+      background-color: #ffffffee;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .right-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .right-section p {
+      margin: 0.3rem 0;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+      }
+
+      .right-section {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="projects.html">PROJECTS</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+
+  <div class="main-container">
+    <div class="left-section">
+      <img src="profile.jpg" alt="Yeganeh" class="profile-img" />
+      <div class="icon-row">
+        <a href="mailto:yeganehfazlollahie@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/yfazlollahi" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <h1>Hi, I’m Yeganeh Fazlollahi</h1>
+      <p><strong>B.Sc. Student, Computer Engineering</strong></p>
+      <p>Amirkabir University of Technology, Tehran</p>
+      <p>Welcome to my personal page! I'm Yeganeh, a passionate computer engineering student interested in Artificial Intelligence, Natural Language Processing, and impactful software development. Explore my projects and feel free to reach out!</p>
+    </div>
+  </div>
+</body>
+</html>
+<!--
     .top-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -144,7 +230,7 @@
         <div class="icon-row">
           <a href="mailto:yeganehfazlollahie@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
           <a href="https://github.com/yfazlollahi" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/yourlinkedin" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
       <img src="profile.jpg" alt="Yeganeh" class="profile-img" />
@@ -167,5 +253,5 @@
     </div>
   </div>
 </body>
-
 </html>
+-->
