@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Yeganeh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #faeee7; 
+      color: #222;
+      padding: 2rem;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-bottom: 4rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2d2d2d;
+      margin-bottom: 2.5rem;
+    }
+
+    .project-card {
+      background-color: #ffffffee;
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .project-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .tech-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tech-icons img {
+      width: 32px;
+      height: 32px;
+      filter: brightness(0.9);
+    }
+
+    .project-description {
+      color: #444;
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .github-link {
+      display: flex;
+      justify-content: center;
+    }
+
+    .github-link img {
+      width: 36px;
+      height: 36px;
+      transition: transform 0.2s ease;
+    }
+
+    .github-link img:hover {
+      transform: scale(1.1);
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      background-color: #e4c0c0;
+      color: #000;
+      padding: 0.6rem 2rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #d8aaaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Projects</h1>
+    <div class="project-card">
+      <div class="project-title">CI-MNIST</div>
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" />
+      </div>
+      <div class="project-description">
+        CI-MNIST is a machine learning project aimed at classifying handwritten digits using CNNs. It demonstrates building, training, and evaluating a neural network on the MNIST dataset.
+      </div>
+      <div class="github-link">
+        <a href="https://github.com/yfazlollahi/MNIST-dataset-Neural-networks"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /></a>
+      </div>
+    </div>
+	<div class="project-card">
+	  <div class="project-title">AI-DQN Snake</div>
+	  <div class="tech-icons">
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+		<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
+	  </div>
+	  <div class="project-description">
+		An AI agent learns to play the classic Snake game using Deep Q-Learning. The project demonstrates reinforcement learning concepts in a fun and visual way.
+	  </div>
+	  <div class="github-link">
+		<a href="https://github.com/yfazlollahi/AI-DQN-SnakeGame"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /></a>
+	  </div>
+	</div>
+  </div>
+  <a class="back-button" href="index.html">BACK</a>
+</body>
+</html>
